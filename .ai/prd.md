@@ -18,7 +18,7 @@ Manualne tworzenie wysokiej jakości fiszek edukacyjnych jest procesem czasochł
 3.2.4. Po kliknięciu generowania aplikacja komunikuje się z API modelu LLM i wyświetla listę wygenerowanych propozycji fiszek do akceptacji.
 3.2.5. W przypadku problemów z API lub braku odpowiedzi modelu użytkownik zobaczy stosowny komunikat błędu.
 3.2.4. Generowanie przez AI "kandydatów na fiszki" składających się z pola "przód" (do 200 znaków) i "tył" (do 500 znaków). 
-3.2.5. Wygenerowane fiszki mogą zawierać formatowanie: nowa linia, pogrubienie.
+3.2.5. Wygenerowane fiszki będą zawierać wyłącznie czysty tekst.
 3.2.6. Prezentacja wygenerowanych "kandydatów na fiszki" użytkownikowi w interfejsie recenzji.
 3.2.7. Umożliwienie użytkownikowi akceptacji, edycji lub odrzucenia każdego "kandydata na fiszkę".
 3.2.8. Zapisywanie zaakceptowanych (lub zaakceptowanych po edycji) fiszek w kolekcji użytkownika (w wybranym folderze).
@@ -27,7 +27,7 @@ Manualne tworzenie wysokiej jakości fiszek edukacyjnych jest procesem czasochł
 
 ### 3.3. Manualne tworzenie fiszek
 3.3.1. Umożliwienie użytkownikowi manualnego tworzenia fiszek z polami "przód" (do 200 znaków) i "tył" (do 500 znaków).
-3.3.2. Możliwość stosowania formatowania: nowa linia, pogrubienie.
+3.3.2. Pola "przód" i "tył" fiszki przechowują wyłącznie czysty tekst.
 3.3.3. Zapisywanie manualnie stworzonych fiszek w kolekcji użytkownika (w wybranym folderze).
 
 ### 3.4. Zarządzanie fiszkami i folderami
@@ -123,7 +123,7 @@ Opis: Jako zalogowany użytkownik, po zleceniu generowania fiszek AI, chcę móc
 Kryteria akceptacji:
 1.  Po zakończeniu generowania przez AI, użytkownik widzi listę "kandydatów na fiszki".
 2.  Każdy kandydat wyświetla pole "przód" i "tył".
-3.  Użytkownik może edytować zawartość pól "przód" i "tył" każdego kandydata (zgodnie z limitami znaków i formatowaniem).
+3.  Użytkownik może edytować zawartość pól "przód" i "tył" każdego kandydata (zgodnie z limitami znaków).
 4.  Użytkownik ma opcję "Akceptuj" dla każdego kandydata (lub po edycji).
 5.  Użytkownik ma opcję "Odrzuć" dla każdego kandydata.
 6.  Zaakceptowani kandydaci (po ewentualnej edycji) są przygotowywani do zapisu.
@@ -154,7 +154,7 @@ Opis: Jako zalogowany użytkownik, chcę móc manualnie stworzyć nową fiszkę,
 Kryteria akceptacji:
 1.  Użytkownik ma dostęp do formularza tworzenia manualnej fiszki.
 2.  Formularz zawiera pola tekstowe dla "przodu" (limit 200 znaków) i "tyłu" (limit 500 znaków) fiszki.
-3.  Użytkownik może stosować formatowanie: nowa linia, pogrubienie.
+3.  Pola "przód" i "tył" fiszki obsługują wyłącznie czysty tekst.
 4.  Interfejs informuje o limitach znaków i bieżącym ich wykorzystaniu.
 5.  Użytkownik może wybrać folder, w którym fiszka ma być zapisana.
 6.  Po wypełnieniu pól i wybraniu folderu, użytkownik może zapisać fiszkę.
@@ -271,4 +271,3 @@ Kryteria akceptacji:
     6.3.3. Średnia liczba fiszek tworzonych na użytkownika.
     6.3.4. Średnia liczba sesji nauki na aktywnego użytkownika.
     6.3.5. Średni czas spędzony w aplikacji.
-```

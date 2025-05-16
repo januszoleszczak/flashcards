@@ -3,10 +3,10 @@ Frontend -
 - Angular 19
 - TypeScript 5
 - Tailwind 4 
+- Store: NgRx
+- Angular Material
 
-Backend - 
-MongoDB i NestJS
-
+Backend - MongoDB i NestJS
 AI - Komunikacja z modelami przez usługę Openrouter.ai:
 
 CI/CD i Hosting:
